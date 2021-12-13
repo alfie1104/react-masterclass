@@ -63,7 +63,7 @@ body {
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
   background-color:${(props) => props.theme.bgColor};
-  color:${(props) => props.theme.textColor};
+  color:black;
   line-height: 1.2;
 }
 a {
@@ -76,9 +76,8 @@ ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
-        <GlobalStyle>
-          <App />
-        </GlobalStyle>
+        <GlobalStyle />
+        <App />
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,
